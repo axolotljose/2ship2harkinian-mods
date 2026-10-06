@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Native OpenGL Surface -->
+    <SurfaceView
+        android:id="@+id/gameSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Touch Overlay Controls -->
+    <com.ps2.shell.TouchOverlayView
+        android:id="@+id/touchOverlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- UI Overlay Controls -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btnSelectFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Game Folder"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnEditTouch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Edit Layout"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Settings"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</FrameLayout>
